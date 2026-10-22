@@ -15,9 +15,7 @@
 #include "../core/csv.h"
 #include "../app/Platform.h"
 #include "../app/ui.h"
-#define private public   // the test reaches into the app on purpose
 #include "../app/App.h"
-#undef private
 
 using namespace ctc;
 namespace fs = std::filesystem;

@@ -41,7 +41,7 @@ public:
     std::string dbPath() const { return plat.dataDir() + "/contactica.json"; }
     bool dirty() const { return dirty_; }
 
-private:
+public:   // left open so the headless test can drive the dialogs and views directly
     void menuBar(); void leftPanel(); void centrePanel(); void detailPanel(); void statusBar(); void modals();
     void pinMap(); void tileMap(); void board();
     void accountTable(bool active, Stage onlyStage);
